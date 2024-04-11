@@ -38,8 +38,9 @@ document
         element.scrollIntoView({ behavior: "smooth" });
     });
 
-const textToType = "New Way To Design Your Car!"; // Your desired text
-const delay = 100; // Delay between typing each character (in milliseconds)
+const textToType =
+    "New Way To Design Your Car! Drive with confidence. We handle your car's every need."; // Your desired text
+const delay = 50; // Delay between typing each character (in milliseconds)
 
 let index = 0;
 const typedTextElement = document.getElementById("typed-text");
