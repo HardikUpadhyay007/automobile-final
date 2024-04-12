@@ -54,4 +54,3 @@ function typeText() {
 }
 
 typeText(); // Start typing animation
-
