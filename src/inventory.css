@@ -465,8 +465,8 @@ main {
 }
 
 .card1-service {
-    width: 20rem;
-    height: 30rem;
+    width: 100px;
+    height: 150px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
