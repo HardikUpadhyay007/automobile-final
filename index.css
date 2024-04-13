@@ -14,7 +14,7 @@ body {
 
 .first-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(./resources/contact-bg.jpg);
+        url(./resources/wall.png);
 
     min-height: 100vh;
     background-size: cover;
@@ -128,13 +128,10 @@ body {
     margin-right: 20px;
 }
 .first-page-principal-escrito-botao {
-    /* background: white; */
     background-color: transparent;
-    /* border: solid 2px white; */
     border: 2px solid white;
     width: 180px;
     height: 60px;
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
 
     font-weight: 400;
@@ -162,7 +159,6 @@ body {
 .first-page-second-text {
     margin-right: 5%;
     margin-left: 9%;
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     /* font-weight: 200px; */
@@ -197,7 +193,6 @@ body {
 }
 
 .second-page-first-part-title {
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
@@ -206,7 +201,6 @@ body {
     color: white;
 }
 .second-page-first-part-para {
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
@@ -223,7 +217,6 @@ body {
 }
 
 .second-page-second-part-title {
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
@@ -232,7 +225,6 @@ body {
     color: white;
 }
 .second-page-second-part-para {
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
@@ -262,7 +254,6 @@ body {
     margin-bottom: 2%;
 }
 .third-page-first-part-title {
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
@@ -271,7 +262,6 @@ body {
     color: white;
 }
 .third-page-first-part-text {
-    /* font-family: "Orbitron", sans-serif; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400px;
@@ -287,9 +277,9 @@ body {
 }
 
 .card1 {
-    width: 40rem;
+    width: 30rem;
     height: 570px;
-    /* background-color: white; */
+
     border-radius: 20px;
     display: flex;
     flex-direction: column;
