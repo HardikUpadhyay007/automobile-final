@@ -6,9 +6,10 @@ document.getElementById("sign-up").onclick = function () {
     window.location.href = "./src/signup.html";
 };
 
-// document.getElementById("about-us-btn").onclick = function () {
-//     window.location.href = "#page2";
-// };
+document.getElementById("inventory-button").onclick = function () {
+    window.location.href = ".//src/inventory.html";
+};
+
 document.getElementById("about-us-btn").addEventListener("click", function () {
     var element = document.getElementById("page2");
     element.scrollIntoView({ behavior: "" });
