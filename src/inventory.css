@@ -93,6 +93,7 @@ main .copyright span {
     padding-left: 0.5rem;
     font-weight: 600;
     font-size: 1.15rem;
+    margin-bottom: 20px;
 }
 
 .shrink-btn {
@@ -238,6 +239,9 @@ nav:hover .shrink-btn,
     grid-row: 1 / 2;
     opacity: 0;
     transition: 0.3s;
+}
+.tooltip-element {
+    margin-bottom: 20px; /* Adjust the value as needed */
 }
 
 .tooltip span.show {
@@ -406,13 +410,6 @@ main {
     padding-left: 16px;
     line-height: 1.8;
     flex: 1;
-}
-
-/* .pricing-plan__features li::marker {
-    color: white;
-} */
-.pricing-plan__features li::marker {
-    color: #cbe300; /* Change the color of the bullet points */
 }
 
 .pricing-plan__cta {

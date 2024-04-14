@@ -6,7 +6,6 @@ html {
 
 #container {
     background-color: white;
-    /* background-image: url("resources/contact-bg.png"); */
     position: relative;
     display: flex;
     justify-content: center;
@@ -19,7 +18,7 @@ html {
     background-repeat: no-repeat;
 }
 .form-container {
-    height: 30vw;
+    height: 40rem;
     width: 500px;
     border-radius: 0.75rem;
     background-color: rgba(17, 24, 39, 1);
