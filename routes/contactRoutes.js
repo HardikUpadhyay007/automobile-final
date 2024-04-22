@@ -19,12 +19,10 @@ router.post("/contactus", async (req, res) => {
             phone,
             feedback,
         });
-
         await newContact.save();
 
-        res.status(201).send({
-            message: "Contact form data saved successfully",
-        });
+        res.status(201).redirect("/?message=message sent successfully");
+
     } catch (error) {
         console.error(error);
         res.status(500).send({
