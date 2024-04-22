@@ -11,9 +11,9 @@ router.get("/signup", (req, res) => {
 router.post("/signup", async (req, res) => {
     // console.log(req.body);
 
-    const existngUser = await User.findOne({ req.body.email });
+    const existngUser = await User.findOne({ email: req.body.email });
     if (existngUser) {
-        return res.status(400).send("User already exists");
+        return res.redirect('/?message=User already exists');
     }
 
     try {
@@ -24,9 +24,8 @@ router.post("/signup", async (req, res) => {
             password: req.body.password,
         });
         await user.save();
-        res.redirect("/");
 
-        res.status(201).send({ message: "User created successfully" });
+        return res.redirect('/?message=User created successfully');
     } catch (error) {
         console.error(error);
         res.status(500).send({

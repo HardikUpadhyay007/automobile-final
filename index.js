@@ -55,3 +55,12 @@ function typeText() {
 }
 
 typeText(); // Start typing animation
+
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const message = urlParams.get('message');
+    if (message) {
+        alert(decodeURIComponent(message));
+    }
+}
+
