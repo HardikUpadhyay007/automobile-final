@@ -20,7 +20,12 @@
             <div id="contact-form">
                 <div class="form-container">
                     <p class="title">Contact Us</p>
-                    <form class="form" action="/contactus" method="post">
+                    <form
+                        class="form"
+                        action="/contactus"
+                        method="post"
+                        onsubmit="validateForm(event)"
+                    >
                         <div class="input-group">
                             <label for="username">Name</label>
                             <input
@@ -40,12 +45,14 @@
                             />
                         </div>
                         <div class="input-group">
-                            <label>Phone</label>
+                            <label for="contact">Contact Number</label>
                             <input
-                                type="text"
-                                name="phone"
-                                id="phone"
+                                type="tel"
+                                name="contact"
+                                id="contact"
                                 placeholder=""
+                                pattern="\d{10}"
+                                title="Please enter a 10-digit phone number."
                             />
                         </div>
                         <div class="input-group" id="feedback">
@@ -62,5 +69,14 @@
                 </div>
             </div>
         </div>
+        <script>
+            function validateForm(event) {
+                var email = document.getElementById("email").value;
+                if (!email.includes("@")) {
+                    alert("Please enter the valid email.");
+                    event.preventDefault();
+                }
+            }
+        </script>
     </body>
 </html>
