@@ -11,10 +11,10 @@ router.get("/signup", (req, res) => {
 router.post("/signup", async (req, res) => {
     // console.log(req.body);
 
-    const existngUser = await User.findOne({ email: req.body.email });
-    if (existngUser) {
-        return res.redirect('/?message=User already exists');
-    }
+    // const existingUser = await User.findOne({ email: req.body.email });
+    // if (existingUser) {
+    //     return res.redirect("/?message=User already exists");
+    // }
 
     try {
         const user = new User({
@@ -25,7 +25,7 @@ router.post("/signup", async (req, res) => {
         });
         await user.save();
 
-        return res.redirect('/?message=User created successfully');
+        return res.redirect("/?message=User created successfully");
     } catch (error) {
         console.error(error);
         res.status(500).send({
